@@ -4,9 +4,8 @@ if __name__ == "__main__":
     """Print all names defined by hidden_4 module."""
     import hidden_4
 
-    module_names = [name for name in dir(hidden_4) if not name.startswith("__")]
-
-    sorted_names = sorted(module_names)
-
-    for name in sorted_names:
-        print(name)
+    names = dir(hidden_4)
+    names = sorted(names)
+    for name in names:
+        if name[:2] != "__":
+            print(name)
