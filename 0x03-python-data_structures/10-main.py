@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 divisible_by_2 = __import__('10-divisible_by_2').divisible_by_2
 
-my_list = [0, 1, 2, 3, 4, 5, 6]
+# my_list = [0, 1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13,14,25,-2,-4,-5,-7,-1]
+my_list = [0, 1, 2, 3]
 list_result = divisible_by_2(my_list)
 
 i = 0
