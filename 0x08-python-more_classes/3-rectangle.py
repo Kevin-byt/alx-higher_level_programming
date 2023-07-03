@@ -48,6 +48,20 @@ class Rectangle:
     def perimeter(self):
         # returns the perimeter of the Rectangle
         if (self.__height == 0 or self.__width == 0):
-            return (0)
+            return 0
 
         return (2 * (self.__height + self.__width))
+
+    def __str__(self) -> str:
+        # returns the visual of the rectangle using '#' to rep a unit length
+        if (self.__width == 0 or self.__height == 0):
+            return ("")
+
+        rec = []
+        for y in range(self.__height):
+            [rec.append('#') for x in range(self.__width)]
+
+            if y != self.__height - 1:
+                rec.append('\n')
+
+        return ("".join(rec))
