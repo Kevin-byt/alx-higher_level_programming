@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Defines a Rectangle class."""
+
 
 class Rectangle:
     """Represent a rectangle."""
@@ -7,8 +9,8 @@ class Rectangle:
         """Initialize a new Rectangle.
 
         Args:
-            width (int): The width of the new rectangle.
-            height (int): The height of the new rectangle.
+            width (int): rectangle width.
+            height (int): rectangle height.
         """
         self.width = width
         self.height = height
