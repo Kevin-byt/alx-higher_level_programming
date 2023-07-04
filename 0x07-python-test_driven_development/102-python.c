@@ -2,7 +2,7 @@
  * File: 102-python.c
  */
 
-#include "Python.h"
+#include <Python.h>
 
 /**
  * print_python_string - Prints information about Python strings.
